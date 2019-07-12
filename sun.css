@@ -1,0 +1,40 @@
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(50px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+
+.sun {
+	box-sizing: border-box;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+}
+
+.image {
+	display: block;
+    margin: auto;
+    
+
+    z-index: -1;
+}
+
+.text {
+	box-sizing: border-box;
+	overflow: hidden;
+	animation: in 4s ease-out 1;
+	animation-fill-mode: forwards;
+	color: white;
+	font-size: 5rem;
+	outline: none;
+	transform: translatey(4rem);
+}
